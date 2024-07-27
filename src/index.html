@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/scripts/index.js" defer></script>
+    <link href="/styles/style.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Temperature Converter</title>
+</head>
+<body>
+<h2>Temperature Converter</h2>
+<div class="main">
+    <br>
+    <hr>
+    <center>
+        <div class="t_calculator">
+            <form>
+                <br>
+                <div class="form-control">
+                    <input class="input input-alt" id="degree" placeholder="Degrees in °C or °F" type="text" required>
+                    <span class="input-border input-border-alt"></span>
+                </div>
+                <br>
+                <label class="label_m">Type of Output:</label>
+                <div class="radio-input-wrapper">
+                    <label class="label">
+                        <input value="Celsius" name="value-radio" id="Celsius" class="radio-input" type="radio" required>
+                        <div class="radio-design"></div>
+                        <div class="label-text">Celsius</div>
+                    </label>
+                    <label class="label">
+                        <input value="Fahrenheit" name="value-radio" id="Fahrenheit" class="radio-input" type="radio" required>
+                        <div class="radio-design"></div>
+                        <div class="label-text">Fahrenheit</div>
+                    </label>
+                </div>
+                <label class="label_m">Result:</label>
+                <div class="result">
+
+                </div>
+                <br>
+                <button type="button"  id="convert">
+                   <span class="span-mother">
+                       <span>C</span>
+                       <span>O</span>
+                       <span>N</span>
+                       <span>V</span>
+                       <span>E</span>
+                       <span>R</span>
+                       <span>T</span>
+                   </span>
+                    <span class="span-mother2">
+                       <span>C</span>
+                       <span>O</span>
+                       <span>N</span>
+                       <span>V</span>
+                       <span>E</span>
+                       <span>R</span>
+                       <span>T</span>
+                   </span>
+                </button>
+            </form>
+        </div>
+    </center>
+</div>
+</body>
+</html>
